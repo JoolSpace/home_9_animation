@@ -1,0 +1,53 @@
+.block {
+  position: relative;
+  padding: 2rem;
+  background-color: rgb(17, 140, 235);
+  height: 200px;
+}
+
+.block__element {
+  position: absolute;
+  width: 120px;
+  height: 60px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 50px;
+
+  left: 0;
+  right: 0;
+
+  background-color: rgb(72, 72, 72);
+  
+  animation-name: animation;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+.block__element2 {
+  width: 120px;
+  height: 4px;
+  border-radius: 5px;
+
+  background-color: rgb(255, 197, 5);
+}
+
+.block__title {
+  margin-top: 15px;
+  color: aliceblue;
+
+}
+
+
+@keyframes animation {
+
+  0%, 50%, 100% {
+    transform: rotate(0deg);
+}
+10%, 30% {
+    transform: rotate(-10deg);
+}
+20%, 40% {
+    transform: rotate(10deg);
+}
+}
